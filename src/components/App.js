@@ -1,11 +1,11 @@
 import '../App.css';
 import React from 'react';
-import TopStories from './TopStories';
+import Destinations from './Destinations';
 
 function App() {
   return (
     <React.Fragment>
-      < TopStories />
+      < Destinations />
     </React.Fragment>
   );
 }

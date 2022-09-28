@@ -1,14 +1,14 @@
 import * as c from '../actions/ActionTypes';
 
-const topStoriesReducer = (state, action) => {
+const destinationsReducer = (state, action) => {
   switch (action.type) {
-    case c.GET_TOP_STORIES_SUCCESS:
+    case c.GET_DESTINATIONS_SUCCESS:
       return {
         ...state,
         isLoaded: true,
-        topStories: action.topStories
+        destinations: action.destinations
       };
-      case c.GET_TOP_STORIES_FAILURE:
+      case c.GET_DESTINATIONS_FAILURE:
         return {
           ...state,
           isLoaded: true,
@@ -19,4 +19,4 @@ const topStoriesReducer = (state, action) => {
   }
 };
 
-export default topStoriesReducer;
+export default destinationsReducer;
